@@ -32,8 +32,8 @@ puts " Welcome to My Ruby Calculator"
 puts "==============================="
 
 puts ""
-puts "To start, please select one of the option listed below: \n\n1 - Addition \n2 - Subtraction \n3 - Division \n4 - Multiplication"
-print "Your choice is: "
+puts "To start, please select one of the option listed below: \n\n1 - Addition \n2 - Subtraction \n3 - Division \n4 - Multiplication \n5 - Exit"
+print "\nYour choice is: "
 
 choice = gets.chomp.to_i
 
@@ -66,6 +66,8 @@ case choice
     readValues
 
     print "The result of #{$number1} * #{$number2} is #{multiplication}"
+  when 5
+    puts "Thanks for using this program!"
   else
     print "Invalid Option!"
 end
